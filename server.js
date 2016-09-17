@@ -26,4 +26,4 @@ app.listen(3300);
 
 
 
-console.log('hello node');
+console.log('My POS');

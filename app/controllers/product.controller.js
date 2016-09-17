@@ -1,12 +1,13 @@
 var modelData = require('mongoose').model('product');
 
+
 exports.getlist = function(req, res, next) {
     modelData.find({}, function(err, data) {
         if (err) {
             console.log(err);
             return next(err);
         } else {
-            console.log('meow');
+            console.log('successful!!!'); 
             res.json(data);
         }
     });
@@ -21,7 +22,7 @@ exports.post = function(req, res, next) {
         if (err) {
             console.log(err);
         } else {
-            console.log('meow');
+            console.log('successful!!!');
             res.json(req.body);
         }
     });
@@ -34,15 +35,15 @@ exports.get = function(req, res, next) {
 };
 
 exports.delete = function(req, res, next) {
-    req.data.remove(function(err){
+    req.data.remove(function(err) {
         if (err) {
             console.log(err);
         } else {
-            
+
             res.json(req.data);
         }
     });
- 
+
 };
 
 exports.put = function(req, res, next) {
@@ -58,7 +59,7 @@ exports.put = function(req, res, next) {
             res.json(req.body);
         }
     });
-    
+
 
 };
 exports.getById = function(req, res, next, _id) {
@@ -72,6 +73,6 @@ exports.getById = function(req, res, next, _id) {
             next();
         }
     });
-    
+
 
 };
