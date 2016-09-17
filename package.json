@@ -1,0 +1,28 @@
+{
+  "name": "cyber_pos",
+  "version": "0.0.1",
+  "description": "point of sale",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ananya2695/cyber-pos-v1.git"
+  },
+  "keywords": [
+    "cyber_pos"
+  ],
+  "author": "Ananya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ananya2695/cyber-pos-v1/issues"
+  },
+  "homepage": "https://github.com/ananya2695/cyber-pos-v1#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.6.0"
+  }
+}
