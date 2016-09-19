@@ -6,7 +6,8 @@ module.exports = function() {
 
 
     require("../app/models/product.model");
-
+    require("../app/models/table.model");
+    require("../app/models/login.model");
 
 
     return db;

@@ -11,6 +11,8 @@ module.exports = function() {
     app.use(bodyParser.urlencoded());
 
     require("../app/routes/product.route")(app);
+    require("../app/routes/table.route")(app);
+    require("../app/routes/login.route")(app);
 
     return app;
 
