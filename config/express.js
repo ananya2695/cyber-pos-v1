@@ -13,6 +13,7 @@ module.exports = function() {
     require("../app/routes/product.route")(app);
     require("../app/routes/table.route")(app);
     require("../app/routes/login.route")(app);
+    require("../app/routes/payment.route")(app);
 
     return app;
 
